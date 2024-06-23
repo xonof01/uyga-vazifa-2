@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5-oy 4-dars</title>
+  </head>
+  <body>
+    <script src="/index.js"></script>
+    <h1><p>
+      2-vazifalar
+IIFE  -   (Immediately Invoked Function Expression1a) - bu JavaScript hodisalar siklida chaqirilgan yoki chaqirilgan paytda ishga tushadigan funksiya. Bunday harakat qiladigan funktsiyaga ega bo'lish muayyan vaziyatlarda foydali bo'lishi mumkin. IIFE global JS doirasining ifloslanishini oldini oladi
+
+Pure Function - Agar bir xil argumentlar beeriladigan bo'lsa doim bir xil natija qaytaradigan funksiya. Bu Funksiyalar hech qanday holatga yoki dasturning bajarilishi davomida ma'mulotlarning o'zgarishiga bog'liq emas, ular o'z argumentlariga bog'liq.
+
+Callback — bu boshqa bir funksiyaga argument sifatida berilgan ikkinchi funksiya.
+
+Object methods - JSda object ma’lumotlarni key: value ko’rinishida saqlanadigan ma’lumot turi hisoblanadi. Agar JSda value funksiya bo’lsa, u method deb ataladi.
+
+Function konstruktor -   Function obyektlarini yaratadi. Konstruktorni to'g'ridan-to'g'ri chaqirish funksiyalarni dinamik ravishda yaratishi mumkin, lekin xavfsizlik va eval() kabi shunga o'xshash (lekin unchalik ahamiyatsiz) ishlash muammolaridan aziyat chekadi. Biroq, evaldan farqli o'laroq (mahalliy qamrovga kirishi mumkin), Function konstruktori faqat global miqyosda bajariladigan funktsiyalarni yaratadi.
+
+JSON.stringify()  - statik usuli JavaScript qiymatini JSON satriga oʻzgartiradi, agar almashtirish funksiyasi belgilangan boʻlsa, qiymatlarni ixtiyoriy ravishda almashtiradi yoki ixtiyoriy ravishda almashtiruvchi massiv koʻrsatilgan boʻlsa, faqat belgilangan xususiyatlarni oʻz ichiga oladi.
+
+
+
+const objEl= {
+name:Ali,
+age: 18,
+kasb: ‘player“'
+};
+
+function getKey(obj) {
+return Object.keys(obj);
+}
+
+console.log(getKey(objEl));
+
+
+2-masala
+
+const objEl= {
+name:Ali,
+age: 18,
+job: “player”
+};
+
+
+function getAll(obj) {
+return Object.values(obj);
+}
+
+console.log(getAll(objEl));
+
+3 - masala
+
+
+const objEl= {
+name:Ali,
+age: 18,
+job: “player”
+};
+
+
+function getAll(obj) {
+return Object.entries(obj);
+}
+
+console.log(getAll(objEl));
+
+
+4 - masala
+
+
+function getFree(obj) {
+return Object.freeze(obj);
+}
+
+
+constgetFree= {
+name:Ali,
+age: 16,
+job: “player”
+};
+
+console.log(getAll(getFree));
+
+
+
+function getEl(arr) {
+if (arr.length < 3) {
+throw new Error
+}
+
+.
+const math = Math.floor(arr.length / 2);
+const mathMid = arr.slice(math - 1, math+ 2);
+
+return mathMid
+}
+
+
+const ArrEl = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const mathMid=getEl(ArrEl);
+console.log(mathMid); 
+
+
+9 - masala
+
+
+
+10 - masala 
+
+const soz= ['cat', 'dog', 'elephant', 'ant', 'bat'];
+
+
+const sozlar= soz=>soz.map(word => word.slice(-1));
+
+
+const sozlarOxiri =sozlar(soz);
+console.log(sozlarOxiri);
+
+
+11 - masala
+
+const sozEl = words =>sozlar.filter(word => word.length < 4);
+
+const sozlar = ['mushuk', 'kuchuk', 'fil',];
+const kaltaSoz = sozEl(sozlar );
+console.log (kaltaSoz );
+
+
+
+
+12 - masala
+
+let user =  [ 
+{ name:”john”, age: 5},
+{ name: “alex”', age: 25}, 
+{ name:”doe”, age: 35} 
+]; 
+
+
+const bolalar= user=>user.some(person => person.age > 18); 
+
+console.log(bolalar (user));
+
+
+
+13 - masala
+
+const allNames = names => names.every(name => name.endsWith('jon'));
+
+
+console.log(allNames(['Alijon', 'Valijon', 'Moxirjon'])); 
+
+
+
+15 - masala
+
+const names = ['Ali', 'Vali', 'Ahror', 'Sardor', 'Asrorbek'];
+
+
+function findEl (names) {
+return names.findIndex(name => name.includes('bek'));
+}
+
+
+const element= findEl(names);
+console.log(element); 
+
+Domla uzur vaziyatim taqazo qilib vaxtida sizga topshira olmadim
+
+
+
+</p></h1>
+  </body>
+</html>
